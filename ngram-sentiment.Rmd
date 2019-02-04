@@ -75,7 +75,7 @@ df_gov <- tibble(gov = c("Harper Gov. (Conservative)",
 
 The figure below shows sentiment scores (positive values indicate 'positive sentiment') for speeches during Question Period in the Canadian Parliament. While the Conservatives were in power between 2011 and 2015, the sentiment of speeches by Conservative members was generally positive, whereas speeches by the opposition members were generally negative. In late 2015 when the Liberal party rose to power, the sentiment scores among Convservatives and Liberals flipped. The governing party is always positive and optomistic whereas the opposition is negative.
 
-```{r, fig.height=3.3, fig.width=7}
+```{r, fig.height=3.3, fig.width=7, dpi=300}
 # plot government session banner
 ptop <- ggplot() +
   geom_rect(aes(xmin = -Inf, xmax = 552, ymin = 0, ymax = 1), fill = "#0570b0") +
